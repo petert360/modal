@@ -1,2 +1,2 @@
 # modal
-Projekt modal
+Project modal
