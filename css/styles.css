@@ -15,7 +15,7 @@ body {
 }
 
 
-.modal__openButton {}
+/* .modal__openButton {} */
 
 
 .modal--hide {
@@ -24,7 +24,13 @@ body {
 
 .modal--show {
     display: flex;
+    animation: fadeIn ease .3s;
 }
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 
 .modal__background {
     align-items: center;
