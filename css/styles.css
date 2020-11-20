@@ -1,0 +1,87 @@
+/* alapbeállítások */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    /* padding: 0; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.modal__background {
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal__rectangle {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.modal__close {
+    display: flex;
+    justify-content: flex-end;
+}
+.modal__closeButton {
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.modal__header {
+    display: flex;
+    justify-content: end;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(73,76,67)
+    /* align-items: flex-end; */
+}
+
+.modal__content {
+    color: rgb(73,76,67);
+}
+
+.modal__footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 0;
+}
+
+.modal__okeyButton{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(45,204,112);
+    padding: .8rem 1.8rem;
+    margin-right: 1rem;
+    border: none;
+}
+.modal__cancelButton{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    padding: .8rem 1.8rem;
+    background-color: rgb(230,78,55);
+    border: none;
+}
+
+@media (min-width: 560px) {
+    .modal__rectangle {
+        max-width: 50vw;
+    }
+}

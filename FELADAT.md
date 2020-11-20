@@ -29,3 +29,7 @@ Egy modal-t, azaz felugró ablakot kell készítened.
 - A modal egy egyszerű animáció kíséretében jelenjen meg (pl.: fade)
 - A modal egy egyszerű animáció kíséretében tűnjön el bezáráskor
 - A modalon kívülre kattintva is automatikusan záródjon be a modal, tűnjön el az overlay réteg
+
+**Kiegészítés**
+- külső link: https://micromodal.now.sh/
+- https://www.toptal.com/designers/htmlarrows/
