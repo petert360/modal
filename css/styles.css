@@ -14,9 +14,19 @@ body {
     box-sizing: border-box;
 }
 
-.modal__background {
+
+.modal__openButton {}
+
+
+.modal--hide {
     display: none;
-    /* display: flex; */
+}
+
+.modal--show {
+    display: flex;
+}
+
+.modal__background {
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.4);
@@ -38,6 +48,7 @@ body {
     display: flex;
     justify-content: flex-end;
 }
+
 .modal__closeButton {
     border: 0;
     background-color: rgb(255, 255, 255);
@@ -50,12 +61,12 @@ body {
     justify-content: end;
     font-size: 1.5rem;
     font-weight: bold;
-    color: rgb(73,76,67)
+    color: rgb(73, 76, 67)
     /* align-items: flex-end; */
 }
 
 .modal__content {
-    color: rgb(73,76,67);
+    color: rgb(73, 76, 67);
 }
 
 .modal__footer {
@@ -64,19 +75,20 @@ body {
     margin: 1rem 0;
 }
 
-.modal__okeyButton{
+.modal__okeyButton {
     font-size: 1rem;
     color: rgb(255, 255, 255);
-    background-color: rgb(45,204,112);
+    background-color: rgb(45, 204, 112);
     padding: .8rem 1.8rem;
     margin-right: 1rem;
     border: none;
 }
-.modal__cancelButton{
+
+.modal__cancelButton {
     font-size: 1rem;
     color: rgb(255, 255, 255);
     padding: .8rem 1.8rem;
-    background-color: rgb(230,78,55);
+    background-color: rgb(230, 78, 55);
     border: none;
 }
 
