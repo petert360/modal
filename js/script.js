@@ -36,6 +36,8 @@ function windowOnClick(event) {
 // ez a megoldás működik
 document.addEventListener('click', e => {
     if (e.target == document.querySelector('.modal__background')) {
+        let divElement = document.querySelector('.modal__background');
+        divElement.className = 'modal__background modal--fadeout'      
         console.log('háttér');
     }
 })
