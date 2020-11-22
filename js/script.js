@@ -11,11 +11,8 @@
 
 let btnElement = document.querySelector('.modal__openButton');
 btnElement.addEventListener('click', function (event) {
-    //    console.log(event.target.textContent);
     let divElement = document.querySelector('.modal__background');
-    //    console.log(divElement.className);
     divElement.className = 'modal__background modal--show'
-    //    console.log(divElement.className);
 })
 
 // követkző lépés, hogy ha a háttérre kattintok, akkor a modal elhalványuljon.
@@ -37,7 +34,9 @@ function windowOnClick(event) {
 document.addEventListener('click', e => {
     if (e.target == document.querySelector('.modal__background')) {
         let divElement = document.querySelector('.modal__background');
-        divElement.className = 'modal__background modal--fadeout'      
-        console.log('háttér');
+        divElement.className = 'modal__background modal--fadeout';
     }
+
+    let clickBg = document.querySelector()
+
 })

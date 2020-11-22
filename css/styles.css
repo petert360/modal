@@ -27,7 +27,7 @@ body {
 
 .modal--fadeout {
     animation: fadeOut ease .3s;
-    display: none;
+    /* display: none; */
 }
 
 @keyframes fadeIn {
