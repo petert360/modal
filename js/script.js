@@ -12,7 +12,7 @@
 let btnElement = document.querySelector('.modal__openButton');
 btnElement.addEventListener('click', function (event) {
     let divElement = document.querySelector('.modal__background');
-    divElement.className = 'modal__background modal--show'
+    divElement.className = 'modal__background modal--show';
 })
 
 // követkző lépés, hogy ha a háttérre kattintok, akkor a modal elhalványuljon.
@@ -32,11 +32,20 @@ function windowOnClick(event) {
 // uj próba: https://webdesign.tutsplus.com/tutorials/how-to-build-flexible-modal-dialogs-with-html-css-and-javascript--cms-33500
 // ez a megoldás működik
 document.addEventListener('click', e => {
-    if (e.target == document.querySelector('.modal__background')) {
-        let divElement = document.querySelector('.modal__background');
-        divElement.className = 'modal__background modal--fadeout';
+    if (e.target === document.querySelector('.modal__background')) {
+        let divElement = document.querySelector('.modal__rectangle');
+        divElement.addEventListener('animationend', function (ev) {
+            console.log('Animation ended', ev);
+            let divBg = document.querySelector('.modal__background');
+            if (ev.animationName === 'fadeOut') {
+                divBg.className = 'modal__background modal--hide';
+                this.removeEventListener('animationend', handler, false);
+            }
+        })
+
+        divElement.className = 'modal__rectangle modal--fadeout';
     }
 
-    let clickBg = document.querySelector()
 
 })
+
